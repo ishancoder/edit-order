@@ -78,13 +78,15 @@ class Products extends Component {
                             this.state.items.map((item, i) => {
                                 return <tr key={item.id}>
                                     <td>
-                                        <input
-                                            className={(!item.id) ? "error" : ""}
-                                            name="id"
-                                            type="number"
-                                            value={item.id}
-                                            onChange={ev => this.onChange(i, ev)} readOnly/>
-                                        <button className="attached">&harr;</button>
+                                        <div className="id-button-wrapper">
+                                            <input
+                                                className={(!item.id) ? "error" : ""}
+                                                name="id"
+                                                type="number"
+                                                value={item.id}
+                                                onChange={ev => this.onChange(i, ev)} readOnly/>
+                                            <button className="attached">&harr;</button>
+                                        </div>
                                     </td>
                                     <td>
                                         <input

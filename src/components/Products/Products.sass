@@ -15,12 +15,19 @@
         table
             margin: auto
             text-align: left
+            border-collapse: collapse
 
+            thead 
+                border-bottom: 1px solid gray
             th
-                min-width: 100px
+                min-width: 120px
+                padding-bottom: 1em
+
+            td 
+                padding: 0.5em
 
             input, textarea  
-                width: 100px
+                max-width: 100px
 
                 &.error
                     border: 1px solid red
@@ -29,6 +36,9 @@
 
             .grow
                 width: 100%
+
+            .id-button-wrapper
+                position: relative
     button
         border: none
         outline: none
@@ -45,7 +55,8 @@
         &.big
             font-size: 20px
         &.attached
-            padding: 6px 0;
-            margin: 0
+            position: absolute
+            padding: 6px 0
+            margin: 0 0 0 -30px
             width: 30px
             border-radius: 0
